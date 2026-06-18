@@ -16,6 +16,7 @@
             data-analytics-id="YOUR-VERCEL-ANALYTICS-ID"></script>
     <!-- Remix Icons CDN -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
@@ -49,7 +50,7 @@
                         <h1 class="hero-greet">Hi There! <span class="wave">👋</span></h1>
                         <h2 class="hero-name">I'M <span class="highlight">MUHAMED NIZAM</span></h2>
                         <div class="typewriter-container">
-                            <span class="type-text">Python Developer</span>
+                              <span id="typed"></span>
                         </div>
                     </div>
                     <div class="hero-col-right">
@@ -263,6 +264,17 @@
                 }
             });
         });
+    </script>
+    <script>
+      new Typed('#typed', {
+        strings: ['Python Developer', 'AI and Data Science Student'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1750,
+        loop: true,
+        showCursor: false,
+        cursorChar: '|'
+      });
     </script>
 </body>
 </html>
