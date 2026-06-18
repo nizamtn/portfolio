@@ -564,16 +564,36 @@ body {
     text-align: center;
 }
 
+.resume-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
 .download-btn {
     background-color: var(--primary-hover);
     color: var(--text-white);
     padding: 0.6rem 1.8rem;
     font-size: 1rem;
-    margin-bottom: 4rem;
 }
 
 .download-btn:hover {
     background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(205, 95, 248, 0.4);
+}
+
+.preview-btn {
+    border: 1px solid var(--primary-hover);
+    color: var(--text-white);
+    padding: 0.6rem 1.8rem;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.preview-btn:hover {
+    background-color: var(--primary-hover);
     box-shadow: 0 0 10px rgba(205, 95, 248, 0.4);
 }
 
@@ -625,25 +645,6 @@ body {
     color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
-}
-
-/* Resume PDF Preview */
-.resume-preview-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 3rem auto 0 auto;
-    border: 1px solid var(--border-color-hover);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(205, 95, 248, 0.2);
-    height: 700px;
-}
-
-.resume-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: #ffffff;
 }
 
 /* -------------------------------------------------------------------------- */
